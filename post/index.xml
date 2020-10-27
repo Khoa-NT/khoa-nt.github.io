@@ -11,6 +11,19 @@
     
     
     <item>
+      <title>Hugo_note</title>
+      <link>https://khoa-nt.github.io/post/hugo_note/</link>
+      <pubDate>Tue, 27 Oct 2020 23:14:20 +0900</pubDate>
+      
+      <guid>https://khoa-nt.github.io/post/hugo_note/</guid>
+      <description>My note when working with Hugo.
+Install Hugo macOS Link
+Window Link
+ Find the hugo_extended_&amp;lt;version_number&amp;gt;_Windows-64bit.zip and download. Unzip file and we have hugo.exe inside that folder. Assume the path of your folder is C:/hugo/file/hugo_extended_&amp;lt;version_number&amp;gt;_Windows-64bit Open Advanced system settings/Environment Variables Choose Path in System variables. Choose New and add the path of the unzip folder. Done  Now you can run hugo in cmd.
+Create new post hugo new post/&amp;lt;title&amp;gt;/index.md</description>
+    </item>
+    
+    <item>
       <title>Cupper Shortcodes</title>
       <link>https://khoa-nt.github.io/post/cupper-shortcodes/</link>
       <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>

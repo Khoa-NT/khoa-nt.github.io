@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://khoa-nt.github.io/tags/hugo/</loc>
+    <lastmod>2020-10-28T00:16:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://khoa-nt.github.io/post/hugo_note/</loc>
+    <lastmod>2020-10-28T00:16:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://khoa-nt.github.io/tags/note/</loc>
+    <lastmod>2020-10-28T00:16:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://khoa-nt.github.io/tags/</loc>
+    <lastmod>2020-10-28T00:16:15+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://khoa-nt.github.io/reviewpaper/adversarial-robustness-as-a-prior-for-better-transfer-learning/</loc>
     <lastmod>2020-08-30T08:06:03+09:00</lastmod>
   </url>
@@ -13,22 +33,12 @@
   </url>
   
   <url>
-    <loc>https://khoa-nt.github.io/tags/</loc>
-    <lastmod>2020-08-30T08:06:03+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://khoa-nt.github.io/tags/transfer-learning/</loc>
     <lastmod>2020-08-30T08:06:03+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://khoa-nt.github.io/post/cupper-shortcodes/</loc>
-    <lastmod>2020-08-30T08:06:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://khoa-nt.github.io/tags/hugo/</loc>
     <lastmod>2020-08-30T08:06:03+09:00</lastmod>
   </url>
   
@@ -49,7 +59,7 @@
   
   <url>
     <loc>https://khoa-nt.github.io/</loc>
-    <lastmod>2020-08-30T08:06:03+09:00</lastmod>
+    <lastmod>2020-10-28T00:16:15+09:00</lastmod>
   </url>
   
   <url>
