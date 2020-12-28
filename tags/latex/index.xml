@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Khoa</title>
-    <link>https://khoa-nt.github.io/post/</link>
-    <description>Recent content in Blog on Khoa</description>
+    <title>latex on Khoa</title>
+    <link>https://khoa-nt.github.io/tags/latex/</link>
+    <description>Recent content in latex on Khoa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2020 06:45:28 +0900</lastBuildDate>
     
-	<atom:link href="https://khoa-nt.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://khoa-nt.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -31,28 +32,6 @@
 Install Installing Latex on Window  Install MiKTeX (link) Then install Latexmk (link)  Intalling LaTeX-Workshop on VS Code  Install Latex on Window follow Installing Latex on Window On VS Code, find the extension name LaTeX-Workshop or LaTeX-Workshop (link)  Note:
  Recommend configure [latex-workshop.latex.autoClean.run](http://latex-workshop.latex.autoClean.run) to onBuilt for deleting all the redundant files after built.  Some Notes Figure position parameters
 You can put more than one value in the parameter, for instance, if you write [ht] LATEX will try to position the figure here, but if it&amp;rsquo;s not possible (the space may be insufficient) then the figure will appear at the top of the page.</description>
-    </item>
-    
-    <item>
-      <title>Hugo note</title>
-      <link>https://khoa-nt.github.io/post/hugo_note/</link>
-      <pubDate>Tue, 27 Oct 2020 23:14:20 +0900</pubDate>
-      
-      <guid>https://khoa-nt.github.io/post/hugo_note/</guid>
-      <description>My note when working with Hugo.
-Install Hugo macOS Link
-Window Link
- Find the hugo_extended_&amp;lt;version_number&amp;gt;_Windows-64bit.zip and download. Unzip file and we have hugo.exe inside that folder. Assume the path of your folder is C:/hugo/file/hugo_extended_&amp;lt;version_number&amp;gt;_Windows-64bit Open Advanced system settings/Environment Variables Choose Path in System variables. Choose New and add the path of the unzip folder. Done  Now you can run hugo in cmd.
-Create new post hugo new post/&amp;lt;title&amp;gt;/index.md</description>
-    </item>
-    
-    <item>
-      <title>Cupper Shortcodes</title>
-      <link>https://khoa-nt.github.io/post/cupper-shortcodes/</link>
-      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
-      
-      <guid>https://khoa-nt.github.io/post/cupper-shortcodes/</guid>
-      <description>blockquote {{&amp;lt; blockquote author=&amp;quot;Carl Jung&amp;quot; &amp;gt;}}Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity.{{&amp;lt; /blockquote &amp;gt;}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
     </item>
     
   </channel>

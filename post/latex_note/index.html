@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.3" />
-  <link rel="canonical" href="https://khoa-nt.github.io/about/">
+  <link rel="canonical" href="https://khoa-nt.github.io/post/latex_note/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>About | Khoa</title>
+  <title>Latex note | Khoa</title>
 </head>
 
   <body>
@@ -174,7 +174,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -216,7 +216,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -247,17 +247,139 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Hi, my name is Khoa.<br>
-Currently, I&rsquo;m a Master student in <a href="http://hvcl.korea.ac.kr/">HVCL</a>.</p>
-<p>My SNS and my contact:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Latex note
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Dec 24, 2020
+      
+        
+          <br>
+          <strong>Last updated: </strong>Dec 29, 2020
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://khoa-nt.github.io/tags/latex/">latex</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://khoa-nt.github.io/tags/overleaf/">overleaf</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#reference">
+            Reference
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#install">
+            Install
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#some-notes">
+            Some Notes
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+
+    <h2 id="reference">Reference</h2>
+<p>Overleaf getting started (<a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">link</a>)</p>
+<h2 id="install">Install</h2>
+<h3 id="installing-latex-on-window">Installing Latex on Window</h3>
+<ol>
+<li>Install MiKTeX (<a href="">link</a>)</li>
+<li>Then install Latexmk (<a href="https://mg.readthedocs.io/latexmk.html">link</a>)</li>
+</ol>
+<h3 id="intalling-latex-workshop-on-vs-code">Intalling LaTeX-Workshop on VS Code</h3>
+<ol>
+<li>Install Latex on Window follow <em><strong>Installing Latex on Window</strong></em></li>
+<li>On VS Code, find the extension name <code>LaTeX-Workshop</code> or LaTeX-Workshop (<a href="https://github.com/James-Yu/LaTeX-Workshop/wiki/Install">link</a>)</li>
+</ol>
+<p><strong>Note</strong>:</p>
 <ul>
-<li><a href="https://www.linkedin.com/in/khoa-nt/">Linkedin</a></li>
-<li><a href="https://twitter.com/Khoa_NguyenTuan">Twitter</a></li>
-<li><a href="tuankhoanguyen94@gmai.com">Email</a></li>
+<li>Recommend configure <code>[latex-workshop.latex.autoClean.run](http://latex-workshop.latex.autoClean.run)</code> to <code>onBuilt</code> for deleting all the redundant files after built.</li>
 </ul>
+<h2 id="some-notes">Some Notes</h2>
+<p><a href="https://www.notion.so/21acd74c78fa42828cb8235bce54473e">Figure position parameters</a></p>
+<p>You can put more than one value in the parameter, for instance, if you write <code>[ht]</code> LATEX will try to position the figure <strong>here</strong>, but if it&rsquo;s not possible (the space may be insufficient) then the figure will appear at the <strong>top</strong> of the page. It is recommended to use more than one positioning parameter to prevent unexpected results.</p>
 
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>

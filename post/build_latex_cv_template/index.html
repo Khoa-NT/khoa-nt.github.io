@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.3" />
-  <link rel="canonical" href="https://khoa-nt.github.io/about/">
+  <link rel="canonical" href="https://khoa-nt.github.io/post/build_latex_cv_template/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>About | Khoa</title>
+  <title>Build CV template in Latex | Khoa</title>
 </head>
 
   <body>
@@ -174,7 +174,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -216,7 +216,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -247,17 +247,254 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Hi, my name is Khoa.<br>
-Currently, I&rsquo;m a Master student in <a href="http://hvcl.korea.ac.kr/">HVCL</a>.</p>
-<p>My SNS and my contact:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Build CV template in Latex
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Dec 29, 2020
+      
+        
+          <br>
+          <strong>Last updated: </strong>Dec 29, 2020
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://khoa-nt.github.io/tags/latex/">latex</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://khoa-nt.github.io/tags/overleaf/">overleaf</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#reference">
+            Reference
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#load-base-class">
+            Load base class
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#two-general-lines">
+            Two general lines
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#modifying-the-section-headers">
+            Modifying the section headers
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#adding-dates-to-section-headers">
+            Adding dates to section headers
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+
+    <h2 id="reference">Reference</h2>
+<p><strong>Blog</strong></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/khoa-nt/">Linkedin</a></li>
-<li><a href="https://twitter.com/Khoa_NguyenTuan">Twitter</a></li>
-<li><a href="tuankhoanguyen94@gmai.com">Email</a></li>
+<li><a href="https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1)">How to write a LaTeX class file and design your own CV (Part 1)</a></li>
+<li><a href="https://medium.com/@primogodec/how-did-i-design-my-cv-in-latex-bb4e5cc9f5fd">How did I design my CV in LaTeX</a></li>
 </ul>
+<p><strong>Template</strong>:</p>
+<ul>
+<li>Awesome CV (<a href="https://github.com/posquit0/Awesome-CV">github</a>, <a href="https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm">overleaf</a>)</li>
+</ul>
+<h2 id="load-base-class">Load base class</h2>
+<pre><code class="language-latex">\LoadClass{ ... }
+</code></pre>
+<blockquote>
+<p>So what has happened here? Class files need to contain a lot of formatting information and internal setup to make LaTeX work properly, but we don&rsquo;t want to have to enter it all manually. Instead we can base our new class file on article.cls. We use \LoadClass to include article.cls and load all of the commands and styles defined in it. Note that we don&rsquo;t use the usual \documentclass command to include article.cls because \documentclass should only ever be called once at the very beginning of your LaTeX document.</p>
+</blockquote>
+<h2 id="two-general-lines">Two general lines</h2>
+<pre><code class="language-latex">\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{khoa_cv}[2020/12/25 Khoa CV class]
+</code></pre>
+<p><code>NeedsTeXFormat</code> configures the Latex package, in this case <strong>LaTeX2e</strong></p>
+<p><code>ProvidesClass{ file_name_cls }[ optional description ]</code></p>
+<h2 id="modifying-the-section-headers">Modifying the section headers</h2>
+<p><code>\RequirePackage{ .. }</code> for including package</p>
+<p>To customs header style, use <code>titlesec</code></p>
+<pre><code class="language-latex">\RequirePackage{titlesec}
+</code></pre>
+<blockquote>
+<p>The titlesec package provides the command \titleformat which lets us customise our section headings.</p>
+</blockquote>
+<p>Example :</p>
+<pre><code class="language-latex">\titleformat{\section}          % Customise the \section command
+	{\Large\scshape\raggedright}  % Make the \section headers large (\Large),
+																% small capitals (\scshape) and left aligned (\raggedright)
+	{}{0em}                       % Can be used to give a prefix to all sections, like 'Section ...'
+	{}                            % Can be used to insert code before the heading
+	[\titlerule]                  % Inserts a horizontal line after the heading
+</code></pre>
+<p>Before
+<img src="images/Untitled.png" alt="images/Untitled.png"></p>
+<p>After
+<img src="images/Untitled%201.png" alt="images/Untitled%201.png"></p>
+<p><strong>Explain:</strong></p>
+<ul>
+<li>
+<p><code>\scshape</code> is described in <a href="https://www.overleaf.com/learn/latex/Font_sizes,_families,_and_styles">Font sizes,families, and styles</a></p>
+</li>
+<li>
+<p><code>\raggedright</code> is described in <a href="https://www.overleaf.com/learn/latex/text_alignment">Text alignment</a></p>
+</li>
+<li>
+<p><code>{}0em}</code>  add prefix and distance between prefix and text. 
+Ex: <code>{AA}{1em}</code>  add AA as prefix and the distance is 1em
+<img src="images/Untitled%202.png" alt="images/Untitled%202.png"></p>
+</li>
+<li>
+<p><code>{}</code> add additional code before text.
+Ex: <code>{B}</code> add B as beforehand code</p>
+</li>
+</ul>
+<p><img src="images/Untitled%203.png" alt="images/Untitled%203.png"></p>
+<ul>
+<li><code>[\titlerule]</code> Inserts a horizontal line after the heading</li>
+</ul>
+<p>Also, we can modify the subsection headers</p>
+<pre><code class="language-latex">\titleformat{\subsection}
+{\large\scshape\raggedright}
+{}{0em}
+{}
+</code></pre>
+<h2 id="adding-dates-to-section-headers">Adding dates to section headers</h2>
+<pre><code class="language-latex">\newcommand{\datedsection}[2]{%
+\section[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\datedsubsection}[2]{%
+\subsection[#1]{#1 \hfill #2}%
+}
+</code></pre>
+<blockquote>
+<p>This defines two new commands \datedsection and \datedsubsection which take two arguments: the section name as before, and a date which will be typeset on the right-hand side of the page. The \hfill command tells LaTeX to fill as much space as possible and so pushes the second argument (#2) to the right of the page.</p>
+</blockquote>
+<blockquote>
+<p>The #1 and #2 refer to the first and second argument or parameter that are being passed into the command. In the first line of a \newcommand, the section in brackets e.g. [2] refers to the number of parameters being passed in to the function. The function can then call these parameters by using #1, #2, and so on, depending on how many parameters were required by the function.</p>
+</blockquote>
+<p><strong>Explain</strong>:</p>
+<pre><code class="language-latex">\newcommand{new_function_name}[number_of_parametes]
+{
+	code_here
+}
+
+\newcommand{\datedsection}[2]
+{
+	\section[#1]{#1 \hfill #2}
+}
+</code></pre>
+<p><code>datedsection</code> is inherited from <code>section</code>, with short text is argument <code>#1</code> and long text is <code>#1 \hfill #2</code></p>
+<p>Modifying <code>cv.tex</code>:</p>
+<pre><code class="language-latex">\documentclass{khoa_cv}
+
+\begin{document}
+
+\section{Education}
+\subsection{University of Nowhere}
+\datedsubsection{University of Nowhere}{2004--2008}
+I attended the University of Nowhere from 2004 to 2008.
+
+\section{Work}
+\subsection{ABC Limited.}
+\datedsubsection{ABC Limited.}{2008--Now}
+I have worked at ABC Limited from 2008 onwards.
+
+\end{document}
+</code></pre>
+<p><img src="images/Untitled%204.png" alt="images/Untitled%204.png"></p>
 
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
